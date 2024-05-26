@@ -1,6 +1,5 @@
-import {createSelector, createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import { Author } from '../types/types';
-import {RootState} from "./store";
 
 interface AuthorsState {
     authors: Author[];
@@ -29,10 +28,7 @@ const authorsSlice = createSlice({
     },
 });
 
-export const selectAuthorByName = (name: string) => createSelector(
-    (state: RootState) => state.authors.authors,
-    (authors: Author[]) => authors.find(author => author.name === name)
-);
+
 
 export const { addAuthor, updateAuthor, deleteAuthor } = authorsSlice.actions;
 export default authorsSlice.reducer;
