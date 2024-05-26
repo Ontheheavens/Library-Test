@@ -1,46 +1,63 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Library-Test
+
+#### Book View:
+![Book View](https://raw.githubusercontent.com/Ontheheavens/Library-Test/master/showcase/Books.png)
+
+#### Author View:
+![Author View](https://raw.githubusercontent.com/Ontheheavens/Library-Test/master/showcase/Authors.png)
+
+#### Application Requirements:
+- Develop a single-page application (SPA) library with a list of books and authors using ReactJS.
+- No backend development is required. The application starts without any data, and books are added and stored in the application's store within the browser session.
+
+#### Page List:
+1. **Book List**
+   - Filter books by author
+     - Dropdown list with single selection of available authors
+     - Apply button - applies the filter with page refresh
+   - Table of books sorted by title, with columns:
+     - ID
+     - Title
+     - Author(s)
+     - Publication Year
+     - Edit button - navigates to the book editing page
+     - Delete button - deletes the book
+   - Add button - navigates to the book addition page
+
+2. **Add/Edit Book Page**
+   - Title field
+   - Publication Year field
+   - Authors field - multiple selection from available authors
+   - Add/Save button
+
+3. **Author List Page**
+   - Table of authors sorted alphabetically, with columns:
+     - ID
+     - Full Name
+     - Number of Books
+     - Edit button - navigates to the author editing page
+     - Delete button - deletes the author
+   - Add button - navigates to the author addition page
+
+4. **Add/Edit Author Page**
+   - Full Name field
+   - Add/Save button
+
+#### Requirements:
+1. A book can have multiple authors
+2. An author can have multiple books
+3. Different pages should have different URLs
+4. Use Formik package with yup validation for forms, all form fields are mandatory
+5. Choose between Redux, MobX, or MobX-state-tree for state store
+6. TypeScript usage is preferred
+7. Use functional components only, no class components allowed
+8. Mandatory use of React hooks and custom hooks
+9. Visual appearance (design/layout) will not be considered, default browser styles or Bootstrap will suffice
+10. Provide a Git repository link where we can clone, install, and open the application locally in a browser.
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
