@@ -1,5 +1,5 @@
 
-## Library-Test
+# Library-Test
 
 #### Book View:
 ![Book View](https://raw.githubusercontent.com/Ontheheavens/Library-Test/master/showcase/Books.png)
@@ -7,7 +7,7 @@
 #### Author View:
 ![Author View](https://raw.githubusercontent.com/Ontheheavens/Library-Test/master/showcase/Authors.png)
 
-#### Application Requirements:
+## Application Requirements:
 - Develop a single-page application (SPA) library with a list of books and authors using ReactJS.
 - No backend development is required. The application starts without any data, and books are added and stored in the application's store within the browser session.
 
